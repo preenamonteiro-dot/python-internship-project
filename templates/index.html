@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#contact">Contact</a>
+            </ul>
+        </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Preena</span></h1>
+
+            <h2>MCA Student & Python Developer</h2>
+
+            <p>
+                Welcome to my personal portfolio.
+                I am interested in Python development,
+                web development and learning new technologies.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an MCA student passionate about technology and software
+            development. I enjoy learning programming, developing projects
+            and improving my technical skills.
+        </p>
+
+        <p>
+            My goal is to build useful and creative applications and
+            start my career as a software developer.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Basic to intermediate Python programming.</p>
+            </div>
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Creating webpages and website structure.</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Designing and styling webpages.</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Adding interaction and functionality to websites.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Flask</h3>
+                <p>Building Python-based web applications.</p>
+            </div>
+
+            <div class="skill">
+                <h3>SQL</h3>
+                <p>Working with databases and queries.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>House Price Prediction</h3>
+
+                <p>
+                    A machine learning project that predicts house prices
+                    using Python and data analysis techniques.
+                </p>
+
+                <p><strong>Technology:</strong> Python, Pandas, Machine Learning</p>
+            </div>
+
+
+            <div class="project-card">
+                <h3>WiFi Security Dashboard</h3>
+
+                <p>
+                    A Flask-based Python web application designed to
+                    display WiFi scanning and security information.
+                </p>
+
+                <p><strong>Technology:</strong> Python, Flask, HTML, CSS</p>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Event Management System</h3>
+
+                <p>
+                    A web application for managing events, viewing event
+                    information and organizing event details.
+                </p>
+
+                <p><strong>Technology:</strong> React, JavaScript, HTML, CSS</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-container">
+
+        <div class="education-card">
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p>Srinivas University, Mukka</p>
+            <p>2025 - Present</p>
+        </div>
+
+        <div class="education-card">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>St Philomena College Puttur</p>
+            <p>Completed</p>
+        </div>
+
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            If you would like to contact me, please fill out the form below.
+        </p>
+
+        <form action="/submit" method="POST">
+
+    <input type="text" name="name" placeholder="Name" required>
+
+    <input type="email" name="email" placeholder="Email" required>
+
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Submit</button>
+
+</form>
+    </section>
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Personal Portfolio. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html> 
